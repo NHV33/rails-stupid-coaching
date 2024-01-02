@@ -1,6 +1,11 @@
-<form method="get" action="/answer" data-turbo="false">
-  <input type="text" name="answer">
-  <input type="submit" value="Ask!">
-</form>
-
-<p><%= @answer %></p>
+<div class="p-5">
+  <div class="border-start border-info border-5 p-2">
+    <p><%= @question %></p>
+    <p>-You</p>
+  </div>
+<BR>
+  <div class="border-start border-success border-5 p-2 bg-warning-subtle">
+    <p><%= @answer %></p>
+    <p>-Your Coach</p>
+  </div>
+</div>
